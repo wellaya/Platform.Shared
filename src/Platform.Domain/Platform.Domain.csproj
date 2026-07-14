@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <PackageId>Platform.Domain</PackageId>
-    <Description>Base entities, value objects, and domain event abstractions for Clean Architecture verticals.</Description>
-  </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Platform.Domain</PackageId>
+		<Description>Base entities, value objects, and domain event abstractions for Clean Architecture verticals.</Description>
+	</PropertyGroup>
+
 </Project>
