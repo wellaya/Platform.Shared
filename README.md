@@ -104,7 +104,7 @@ Package and assembly versions are generated automatically during the build.
 
 See the companion **Clean Architecture Azure Functions template** for a complete implementation showing how these shared packages are used within a vertical application.
 
-> https://github.com/YourOrg/CleanArchitecture.Functions.Template
+> https://github.com/wellaya/CleanArchitecture.Functions.Template
 
 ---
 
