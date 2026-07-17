@@ -20,7 +20,7 @@ public static class DependencyInjection
         services.AddMediatR(cfg =>
         {
             cfg.RegisterServicesFromAssembly(verticalApplicationAssembly);
-            cfg.AddOpenRequestPreProcessor(typeof(LoggingBehaviour<,>));
+            cfg.AddOpenRequestPreProcessor(typeof(LoggingBehaviour<>));
             cfg.AddOpenBehavior(typeof(ValidationBehaviour<,>));
             cfg.AddOpenBehavior(typeof(PerformanceBehaviour<,>));
         });

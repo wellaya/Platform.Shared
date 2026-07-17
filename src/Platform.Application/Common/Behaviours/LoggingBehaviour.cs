@@ -1,12 +1,11 @@
-﻿using MediatR;
-using MediatR.Pipeline;
+﻿using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
 using Platform.Application.Common.Interfaces;
 
 namespace Platform.Application.Common.Behaviours;
 
-public class LoggingBehaviour<TRequest, TResponse>(
-    ILogger<LoggingBehaviour<TRequest, TResponse>> logger, ICurrentUser currentUser)
+public class LoggingBehaviour<TRequest>(
+    ILogger<LoggingBehaviour<TRequest>> logger, ICurrentUser currentUser)
     : IRequestPreProcessor<TRequest> where TRequest : notnull
 {
     public Task Process(TRequest request, CancellationToken cancellationToken)
